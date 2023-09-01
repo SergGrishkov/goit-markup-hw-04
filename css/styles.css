@@ -59,6 +59,8 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   padding: 24px 0;
 }
 
@@ -204,9 +206,19 @@ h3 {
 }
 
 .section-first {
-  background: #2e2f42;
-  flex-shrink: 0;
+  background-color: #2e2f42;
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/Office.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .section-first .text {
@@ -366,6 +378,18 @@ footer {
   width: 264px;
 }
 
+.paragraph-description {
+  display: block;
+  max-width: 264px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
 .logo-footer {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -378,7 +402,45 @@ footer {
   display: inline-block;
   margin-bottom: 16px;
 }
-
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+}
 .footer-logo-studio {
   color: #f4f4fd;
+}
+
+.footer-list-icons {
+  display: flex;
+  gap: 16px;
+}
+.svg-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-svg {
+  fill: #f4f4fd;
+}
+
+.footer-hover:hover,
+.footer-hover:focus {
+  background-color: #31d0aa;
+}
+
+.logo-box {
+  margin-right: 120px;
 }

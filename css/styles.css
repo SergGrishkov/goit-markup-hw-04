@@ -102,7 +102,6 @@ img {
 
 .nav-list {
   display: flex;
-  align-items: flex-start;
   gap: 40px;
 }
 
@@ -192,8 +191,10 @@ img {
 }
 
 .btn {
-  background: var(--iris, #4d5ae5);
-  color: var(--white, #fff);
+  display: block;
+  background: #4d5ae5;
+  color: #fff;
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -205,6 +206,9 @@ img {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:active,
@@ -337,6 +341,12 @@ h3 {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-icon {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .our-team-list-item .card-info {

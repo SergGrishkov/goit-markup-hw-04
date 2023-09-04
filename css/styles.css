@@ -118,12 +118,6 @@ img {
   transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list .item-ref {
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .item-ref:focus,
 .item-ref:hover {
   color: #404bbf;
@@ -175,6 +169,9 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts li a:hover,
